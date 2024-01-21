@@ -6,6 +6,7 @@ import placeholder from '../assets/placeholder.svg';
 
 const Ul = styled.ul`
   list-style: none;
+  padding: 0;
 `;
 
 // const Div = styled.div`
@@ -19,10 +20,23 @@ const CardContainer = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 500px;
+  max-width: 60%;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  /* @media (max-width: 900px) {
+    max-width: 90%;
+  } */
+
+  @media (min-width: 500px) and (max-width: 700px) {
+    /* Styles to apply when the screen width is between 500px and 700px */
+    max-width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 100%;
+  }
 `;
 
 const Image = styled.img`

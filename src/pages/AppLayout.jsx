@@ -5,25 +5,25 @@ import cdLogo from '../assets/cd_logo.svg';
 const Main = styled.main`
   display: flex;
   justify-content: center;
-  padding: 0 4.8rem;
+  padding: 0 1rem;
   /* border: 1px solid var(--color-grey-100); */
 
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     padding: 0 1rem;
-  }
+  } */
 `;
 
 const Container = styled.div`
   max-width: 120rem;
-  padding: 0 3.2rem;
+  padding: 0 1rem;
   margin-top: 32px;
 
   margin: 0 auto;
 
-  @media (max-width: 500px) {
-    padding: 0 1.8rem;
+  /* @media (max-width: 500px) {
+    padding: 0 1rem;
     margin-top: 24px;
-  }
+  } */
 `;
 
 const Nav = styled.nav`
@@ -35,7 +35,7 @@ const Nav = styled.nav`
   border: 1px solid var(--color-grey-100);
   /* position: relative; */
 
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     padding: 0.4rem 1.8rem;
     border: none;
     z-index: 9;
@@ -51,7 +51,7 @@ const Nav = styled.nav`
     visibility: ${(props) => (props.$isOpen ? 'visible' : 'hidden')};
     opacity: ${(props) => (props.$isOpen ? 0.95 : 0)};
     pointer-events: ${(props) => (props.$isOpen ? 'auto' : 'none')};
-  }
+  } */
 `;
 
 const Img = styled.img`
